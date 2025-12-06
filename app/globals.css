@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+:root {
+  --background: 220 25% 98%;
+  --foreground: 220 15% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 15% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 15% 15%;
+  --primary: 210 100% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 270 60% 70%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 220 20% 95%;
+  --muted-foreground: 220 10% 45%;
+  --accent: 180 65% 65%;
+  --accent-foreground: 220 15% 15%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 20% 88%;
+  --input: 220 20% 88%;
+  --ring: 210 100% 60%;
+  --radius: 1rem;
+  --chart-1: 210 100% 60%;
+  --chart-2: 270 60% 70%;
+  --chart-3: 180 65% 65%;
+  --chart-4: 150 60% 65%;
+  --chart-5: 330 70% 70%;
+}
+
+.dark {
+  --background: 220 25% 10%;
+  --foreground: 220 10% 90%;
+  --card: 220 20% 12%;
+  --card-foreground: 220 10% 90%;
+  --popover: 220 20% 12%;
+  --popover-foreground: 220 10% 90%;
+  --primary: 210 90% 55%;
+  --primary-foreground: 220 10% 10%;
+  --secondary: 270 50% 60%;
+  --secondary-foreground: 220 10% 90%;
+  --muted: 220 20% 20%;
+  --muted-foreground: 220 10% 60%;
+  --accent: 180 60% 50%;
+  --accent-foreground: 220 10% 90%;
+  --destructive: 0 75% 55%;
+  --destructive-foreground: 220 10% 90%;
+  --border: 220 20% 20%;
+    --input: 220 20% 20%;
+  --ring: 210 90% 55%;
+  --chart-1: 210 90% 55%;
+  --chart-2: 270 50% 60%;
+  --chart-3: 180 60% 50%;
+  --chart-4: 150 50% 55%;
+  --chart-5: 330 60% 60%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Beautiful gradient backgrounds for UI sections */
+.gradient-bg-light {
+  background: linear-gradient(135deg, 
+    hsl(210, 100%, 97%) 0%, 
+    hsl(270, 60%, 97%) 50%, 
+    hsl(180, 65%, 97%) 100%);
+}
+
+.gradient-bg-dark {
+  background: linear-gradient(135deg, 
+    hsl(220, 25%, 12%) 0%, 
+    hsl(270, 30%, 15%) 50%, 
+    hsl(200, 25%, 12%) 100%);
+}
+
+/* Peaceful gradient for sidebar */
+.gradient-sidebar-light {
+  background: linear-gradient(180deg, 
+    hsl(210, 100%, 98%) 0%, 
+    hsl(220, 25%, 96%) 100%);
+}
+
+.gradient-sidebar-dark {
+  background: linear-gradient(180deg, 
+    hsl(220, 25%, 11%) 0%, 
+    hsl(220, 25%, 9%) 100%);
+}
+
+/* Accent gradient for buttons and highlights */
+.gradient-accent {
+  background: linear-gradient(135deg, 
+    hsl(210, 100%, 60%) 0%, 
+    hsl(180, 65%, 65%) 100%);
+}
+
+.gradient-accent-hover {
+  background: linear-gradient(135deg, 
+    hsl(210, 100%, 55%) 0%, 
+    hsl(180, 65%, 60%) 100%);
+}
+
+/* Soft glow effects */
+.glow-primary {
+  box-shadow: 0 0 20px hsla(210, 100%, 60%, 0.3);
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px hsla(180, 65%, 65%, 0.3);
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
